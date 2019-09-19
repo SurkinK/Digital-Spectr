@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding-top: 31px;
+
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 40px;
+  width: 481px;
+  box-sizing: border-box;
+
+  background-color: #F7F5F9;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  clip: rect(0,0,0,0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.form_title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #3B3D43;
+}
+
+.form_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.form_input {
+  box-sizing: border-box;
+  padding: 14px 35.12px 14px 15px;
+  width: 100%;
+
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border: none;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.form_input::placeholder {
+   color: #D0C9D6;
+}
+
+.form_input:-ms-input-placeholder {
+   color: #D0C9D6;
+}
+
+.form_input::-ms-input-placeholder {
+   color: #D0C9D6;
+}
+
+.form_button {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 14px; /*Для pixel-perfect, по фигме должно быть 13*/
+  padding-bottom: 12px; /*Для pixel-perfect, по фигме должно быть 13*/
+
+  background: #6979F8;
+  border-radius: 6px;
+  border: none;
+
+  font-size: 17px;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.form_input:hover,
+.form_input:focus,
+.form_button:focus,
+.form_button:hover {
+  outline: none;
+  box-shadow: 0 0 0 1px #854FC8; /*Через border размер элемента меняется, через box-shadow нет, поэтому решил его использовать, опять же для pixel-perfect*/
+}

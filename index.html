@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Выполнение задания для академии Digital Spectr</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="form">
+    <form action="https://digital-spectr.com/ac/academy.php" method="post">
+      <p class="form_title form_item">Задать вопрос</p>
+      <label class="visually-hidden form_item" for="name-field">Введите фамилию, имя, отчество</label>
+      <input class="form_input form_item" type="text" name="name" id="name-field" placeholder="Фамилия Имя Отчество *" aria-describedby="Обязательное. Только русские буквы, пробелы, тире" pattern="[А-Яа-яЁё\s-]+$" title="Только русские буквы, пробелы, тире" autofocus required>
+      <label class="visually-hidden form_item" for="phone-field">Введите телефон</label>
+      <input class="form_input form_item" type="tel" name="phone" id="phone-field" placeholder="Телефон *" aria-describedby="Обязательное. Только цифры, тире, пробелы, знак плюса" pattern="[0-9\s-+]+$" title="Только цифры, тире, пробелы, знак плюса" required>
+      <label class="visually-hidden form_item" for="email-field">Введите Email</label>
+      <input class="form_input form_item" type="email" name="email" id="email-field" placeholder="Email" aria-describedby="Только строки, соответствующие формату Email">
+      <button class="form_button" type="submit" name="button-submit">Отправить запрос</button>
+    </form>
+  </div>
+</body>
+</html>
